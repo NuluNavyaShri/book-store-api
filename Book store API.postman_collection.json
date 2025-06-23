@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "809ce751-fd1f-4be5-9b75-6f6d752a7cdd",
+		"name": "Book store API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46105031",
+		"_collection_link": "https://nulunavyashri.postman.co/workspace/Nulu-Navya-Shri's-Workspace~cfea5cee-2881-4b07-87dc-58b70762256a/collection/46105031-809ce751-fd1f-4be5-9b75-6f6d752a7cdd?action=share&source=collection_link&creator=46105031"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/books",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Atomic Habits\",\r\n  \"author\": \"James Clear\",\r\n  \"price\": 499,\r\n  \"publishedDate\": \"2018-10-16\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/d186c3e5-91af-47a0-af0f-b18379335cc9",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Atomic Habits (Updated)\",\r\n  \"author\": \"James Clear\",\r\n  \"price\": 450,\r\n  \"publishedDate\": \"2018-10-16\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/d186c3e5-91af-47a0-af0f-b18379335cc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"d186c3e5-91af-47a0-af0f-b18379335cc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/d186c3e5-91af-47a0-af0f-b18379335cc9",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/d186c3e5-91af-47a0-af0f-b18379335cc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"d186c3e5-91af-47a0-af0f-b18379335cc9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
